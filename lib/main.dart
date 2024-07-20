@@ -32,9 +32,9 @@ class _WebViewScreenState extends State<WebViewScreen> {
     return Scaffold(
       body: SafeArea(
         child: InAppWebView(
-          initialUrlRequest: URLRequest(
-            url: WebUri.uri(Uri.parse("http://10.0.2.2:3000/")),
-          ),
+          initialUrlRequest:
+              URLRequest(url: WebUri.uri(Uri.parse("https://introme.co.kr/"))),
+          // url: WebUri.uri(Uri.parse("http://172.30.1.10:3000"))),
           onWebViewCreated: (controller) {
             webViewController = controller;
           },
